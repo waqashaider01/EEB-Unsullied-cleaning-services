@@ -1,0 +1,593 @@
+/* @font-face {
+    font-family: 'Futura Hv BT';
+    src: url('../Futura-Book-Font/FuturaRegular.otf') format('truetype') !important;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    /* font-family: 'Futura Hv BT'; */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+:root {
+    --color-1: rgba(255, 255, 255, 0.87);
+    --color-2: rgba(255, 255, 255, 0.57);
+    --color-3: #FFFFFF;
+    --color-4: #B21490;
+    --color-5: #202D35;
+    --color-6: #9947E2;
+    --color-7: #ECECEC;
+    --color-8: #FC466B;
+    --color-9: #1E201F;
+    --color-10: #161817;
+    --color-11: #575757;
+    --color-12: #3531b1;
+    --color-13: #4072EA;
+}
+
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: var(--color-9) !important;
+    color: var(--color-1) !important;
+}
+
+.dropdown_bg_clr {
+    background: var(--color-9) !important;
+    position: relative;
+    z-index: 100;
+}
+
+.heroSection {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.46)), url('../images/1\ \(26\).jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-position: center;
+}
+
+.heroSection1__1 {
+    background: url('../images/Group\ 70.png');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.navItem a {
+    list-style: none;
+    color: var(--color-3);
+    letter-spacing: 0.1em;
+}
+
+.pe-6 {
+    padding-right: 4rem;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .navItem a {
+        letter-spacing: 0em;
+    }
+
+    .pe-6 {
+        padding-right: 3rem;
+    }
+}
+
+.navItem a:hover {
+    color: var(--color-6);
+}
+
+.navItem a:active {
+    color: var(--color-6) !important;
+}
+
+.requestBtn {
+    border-radius: 0px;
+    background-color: var(--color-6);
+    /* width: 224px; */
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Futura Md BT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-3);
+}
+
+.requestBtn:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.myNvabar {
+    position: relative;
+    z-index: 1;
+}
+
+.aboutText {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 69px;
+    margin: 6rem auto;
+    /* identical to box height, or 172% */
+
+    letter-spacing: 0.1em;
+
+    /* High Wte */
+
+    color: var(--color-1);
+    /* padding-bottom: 10rem; */
+}
+
+.fos1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    /* Med Wte */
+
+    color: var(--color-2);
+}
+
+.bg1 {
+    background-color: var(--color-9);
+    margin-top: -8px
+}
+
+.bg3 {
+    background-color: var(--color-9);
+    margin-top: -16px
+}
+
+.fos2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    /* High Wte */
+
+    color: var(--color-1);
+}
+
+.aImg {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aImg img {
+    border-radius: 10px;
+    width: 80%;
+    object-fit: cover;
+}
+
+.bg2 {
+    background-color: var(--color-10);
+    margin-top: -8px
+}
+
+.fos3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    /* Med Wte */
+
+    color: var(--color-2);
+}
+
+.fos4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    /* High Wte */
+
+    color: var(--color-1);
+
+
+}
+
+.fos5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* Med Wte */
+
+    color: var(--color-2);
+}
+
+.bgImage {
+    background: url('../images/quoteImg.png');
+    background-size: cover;
+    /* margin-top: -8px; */
+    height: 400px;
+    display: flex;
+}
+
+.free__quote__section {
+    margin: auto;
+}
+
+.fos6 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.25em;
+
+    /* High Wte */
+
+    color: var(--color-1);
+}
+
+.quoteBtn {
+    background: var(--color-3);
+    border-radius: 10px;
+}
+
+.quoteBtn:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*Big smartphones [426px -> 600px]*/
+    .requestBtn {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .aImg {
+        width: 100%;
+    }
+}
+
+/* join our team css */
+.viewJob {
+    background: var(--color-6);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.viewJob:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.jobText {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 69px;
+    /* identical to box height, or 172% */
+
+    letter-spacing: 0.1em;
+
+    /* High Wte */
+
+    color: var(--color-1);
+
+}
+
+.pImg {
+    width: 100%;
+}
+
+/* service page css */
+/* .sbg1 {
+    background: url('../images/servicebg.png');
+    background-size: cover;
+
+
+} */
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+/* contact page css */
+.contactBg {
+    background: url('../images/contactbg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.fos8 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    /* High Wte */
+
+    color: var(--color-1);
+}
+
+.gCard {
+    background: var(--color-3);
+    border-radius: 10px;
+    width: 279px;
+    height: 104px;
+}
+
+.fos9 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    /* High Blk */
+
+    color: var(--color-1);
+}
+
+.paara {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    /* identical to box height */
+
+
+    /* High Blk */
+
+    color: var(--color-1);
+
+}
+
+.fos10 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    /* High Blk */
+
+    color: var(--color-1);
+}
+
+.fos11 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* High Wte */
+
+    color: var(--color-1);
+}
+
+.cInput {
+    background: var(--color-9);
+    border-radius: 10px;
+    border: none;
+}
+
+.subBtn {
+    background: var(--color-13);
+    border-radius: 10px;
+    color: var(--color-3);
+    font-weight: 400;
+}
+
+.subBtn:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+/* ======Header Logo css start========== */
+.eeb_logo {
+    width: 110px;
+    margin-left: 30px;
+}
+
+@media(max-width:768px) {
+    .eeb_logo {
+
+        margin-left: 5px;
+    }
+
+}
+
+/* ======Header Logo css End========== */
+
+/* ========= Footer About Us Start ======= */
+.footer_title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+
+.footer_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.my_logo {
+    width: 182px;
+    height: 67px;
+    background: var(--color-7);
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_title {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+
+.footer_img_gallery {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.footer_card {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.get_a_quote_btn {
+    background: var(--color-6);
+    color: var(--color-1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 41px;
+    border: none;
+}
+
+.get_a_quote_btn:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.footer_navbar nav a {
+    color: var(--color-1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.footer_navbar nav a:hover {
+    color: var(--color-6);
+    transition: 0.3s;
+}
+
+.my_btm_bdr {
+    margin: 0px 10px;
+    border: 1px solid var(--color-3);
+}
+
+.footer_copy_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+/* ========= Footer About Us End ======= */
+
+/* ======== Footer Meida Quiry 520px ========== */
+@media screen and (max-width:520px) {
+
+    .footer_img_gallery {
+        justify-content: start;
+    }
+
+}
+
+.p__imgg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.p__imgg img {
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.card___card {
+    background: var(--color-3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.card___inner a {
+    text-decoration: none;
+    color: var(--color-10);
+    cursor: pointer;
+}
+
+.card___inner {
+    display: flex;
+}
+
+.card___inner a:hover {
+    background: var(--color-11);
+    color: var(--color-3);
+    transition: 0.3s;
+}
+
+.img__fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img__fluid img {
+    width: 90%;
+    object-fit: cover;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .card___inner {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
