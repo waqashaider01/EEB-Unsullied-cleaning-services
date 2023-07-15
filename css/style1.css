@@ -3,11 +3,15 @@
     src: url('../Futura-Book-Font/FuturaRegular.otf') format('truetype') !important;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Victor+Mono:wght@300;400;500;600;700&display=swap');
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Victor+Mono&display=swap');
+
+    {
     /* font-family: 'Futura Hv BT'; */
-    font-family: 'Montserrat', sans-serif !important;
+    /* font-family: 'Montserrat', sans-serif !important; */
+    /* font-family: 'Times New Roman', Times, serif !important; */
 }
 
 
@@ -37,17 +41,16 @@
 }
 
 
-
 :root {
     --color-1: rgba(255, 255, 255, 0.87);
     --color-2: rgba(255, 255, 255, 0.57);
     --color-3: #FFFFFF;
-    --color-4: #B21490;
+    --color-4: #00349a;
     --color-5: #202D35;
-    --color-6: #9947E2;
+    --color-6: #18BEF0;
     --color-7: #ECECEC;
     --color-8: #FC466B;
-    --color-9: #1E201F;
+    --color-9: #161817;
     --color-10: #161817;
     --color-11: #575757;
     --color-12: #3531b1;
@@ -72,7 +75,7 @@ body {
     background-size: contain;
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 83%;
     top: 0;
 }
 
@@ -87,7 +90,7 @@ body {
 } */
 
 .banner__1__content {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 
 input .inp-icon {
@@ -97,7 +100,7 @@ input .inp-icon {
 
 .banner__1__content h6 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 19px;
     letter-spacing: 0.1em;
     color: var(--color-2);
@@ -119,10 +122,10 @@ input .inp-icon {
 }
 
 .banner__1__content h1 {
-    font-weight: 400;
-    font-size: 58px;
+    font-weight: 700;
+    font-size: 48px;
     line-height: 69px;
-    background: linear-gradient(180deg, #FC466B -48.19%, #5972F4 82.61%);
+    background: linear-gradient(180deg, #18BEF0 100.19%, #18BEF0 80.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -132,19 +135,19 @@ input .inp-icon {
 }
 
 .banner__button {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-    color: var(--color-1);
+    letter-spacing: 1.40px;
+    color: #00349a;
     background-color: var(--color-6);
-    padding: 20px 40px;
+    padding: 14px 28px;
     gap: 10px;
     border-radius: 10px;
     border: 1px solid var(--color-6);
     transition: all .3s ease-in-out;
     position: relative;
-    z-index: 1;
+    z-index: 100;
 }
 
 .banner__button:hover {
@@ -192,6 +195,15 @@ input .inp-icon {
     color: var(--color-1);
 }
 
+
+textarea:focus, input:focus {
+    color: #ffffff;
+}
+
+input, select, textarea {
+    color: #ffffff;
+}
+
 .location-input {
     width: 51%;
     height: 30px;
@@ -229,6 +241,7 @@ input .inp-icon {
 .search-button {
     color: var(--color-1);
     border: none;
+    font-family: 'Victor Mono', monospace;
     cursor: pointer;
     position: absolute;
     right: 3%;
@@ -483,7 +496,7 @@ hr {
 }
 
 .form-check-input:checked[type=checkbox] {
-    background-image: url(/images/check.png);
+    background-image: url(/images/about/Vector\(1\).png);
 }
 
 .section__heading__2 h3 {
@@ -505,7 +518,7 @@ hr {
     color: var(--color-1);
     background: var(--color-10);
     border-radius: 10px;
-    border: none;
+    border: 1px solid var(--color-3) !important;
     padding: 20px;
     background-image: url(/images/down-arrow.png);
     background-repeat: no-repeat;
@@ -528,7 +541,7 @@ hr {
     line-height: 1.5;
     color: var(--color-2);
     background-color: var(--color-10);
-    border: none;
+    /* border: none; */
     border-radius: 0.25rem;
 }
 
@@ -753,7 +766,7 @@ hr {
 
 
     .banner__1__content {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
     }
 
     .location__icon {
@@ -762,8 +775,9 @@ hr {
     }
 
     .banner__1__content h1 {
-        font-weight: 400;
-        font-size: 50px;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
     }
 
     .search-button {
@@ -799,7 +813,7 @@ hr {
 
 
     .banner__1__content {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
 
     .location__icon {
@@ -808,9 +822,9 @@ hr {
     }
 
     .banner__1__content h1 {
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 40px;
+        font-weight: 700;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .search-button {
@@ -838,7 +852,7 @@ hr {
     }
 
     .banner__1__content {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
 
     .location__icon {
@@ -847,8 +861,11 @@ hr {
     }
 
     .banner__1__content h1 {
-        font-weight: 400;
-        font-size: 34px;
+
+
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         line-height: 40px;
         background: linear-gradient(180deg, #FC466B -48.19%, #5972F4 82.61%);
         -webkit-background-clip: text;
@@ -875,6 +892,10 @@ hr {
         border-radius: 20px;
         margin-bottom: 1.5rem;
     }
+
+    /* #text__color {
+        color: var(--color-3) !important;
+    } */
 
     .location-input {
         width: 100%;
@@ -933,7 +954,7 @@ hr {
     }
 
     .banner__1__content {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
 
     .location__icon {
@@ -942,14 +963,15 @@ hr {
     }
 
     .banner__1__content h1 {
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 40px;
-        background: linear-gradient(180deg, #FC466B -48.19%, #5972F4 82.61%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+
+
+
+
+        font-weight: 600;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 50px;
+
     }
 
     .location-input {

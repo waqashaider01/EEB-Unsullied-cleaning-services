@@ -2,24 +2,33 @@
     font-family: 'Futura Hv BT';
     src: url('../Futura-Book-Font/FuturaRegular.otf') format('truetype') !important;
 } */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Victor+Mono:wght@300;400;500;600;700&display=swap');
 
 * {
     /* font-family: 'Futura Hv BT'; */
     font-family: 'Montserrat', sans-serif !important;
 }
 
+
+
+button span svg {
+    color: #18bef0;
+    width: 20px;
+    height: 20px;
+}
+
+
 :root {
     --color-1: rgba(255, 255, 255, 0.87);
     --color-2: rgba(255, 255, 255, 0.57);
     --color-3: #FFFFFF;
-    --color-4: #B21490;
+    --color-4: #00349a;
     --color-5: #202D35;
-    --color-6: #9947E2;
+    --color-6: #18BEF0;
     --color-7: #ECECEC;
     --color-8: #FC466B;
-    --color-9: #1E201F;
+    --color-9: #161817;
     --color-10: #161817;
     --color-11: #575757;
     --color-12: #3531b1;
@@ -41,7 +50,8 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: sans-serif;
+    /* font-family: 'Montserrat', sans-serif !important; */
     background: var(--color-9) !important;
     color: var(--color-1) !important;
 }
@@ -53,11 +63,20 @@ body {
 }
 
 .heroSection {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.46)), url('../images/1\ \(26\).jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.46)), url('../images/about/aboutetc\ \(2\).jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
+    background-position: center;
+}
+
+.jointeam {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.46)), url('../images/workus.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
     background-position: center;
 }
 
@@ -74,8 +93,9 @@ body {
 
 .navItem a {
     list-style: none;
-    color: var(--color-3);
+    color: var(--color-2);
     letter-spacing: 0.1em;
+    font-size: 14px;
 }
 
 .pe-6 {
@@ -108,9 +128,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    font-family: 'Futura Md BT';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: var(--color-3);
@@ -128,10 +148,10 @@ body {
 }
 
 .aboutText {
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 36px;
     line-height: 69px;
-    margin: 6rem auto;
+    margin: 2rem 2rem;
     /* identical to box height, or 172% */
 
     letter-spacing: 0.1em;
@@ -320,6 +340,12 @@ body {
 
 } */
 
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 .py-6 {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -327,11 +353,13 @@ body {
 
 /* contact page css */
 .contactBg {
-    background: url('../images/contactbg.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.46)), url('../images/contact_us2\ \(2\).jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
+    background-position: top;
+    /* background-position: center; */
 }
 
 .fos8 {
@@ -407,7 +435,7 @@ body {
 .cInput {
     background: var(--color-9);
     border-radius: 10px;
-    border: none;
+    /* border: none; */
 }
 
 .subBtn {
@@ -424,17 +452,13 @@ body {
 }
 
 /* ======Header Logo css start========== */
-.eeb_logo {
-    width: 110px;
-    margin-left: 30px;
+.eeb_logo2 {
+    width: 200px;
 }
 
-@media(max-width:768px) {
-    .eeb_logo {
-
-        margin-left: 5px;
-    }
-
+.eeb_logo {
+    width: 150px;
+    margin-left: 50px;
 }
 
 /* ======Header Logo css End========== */
@@ -575,6 +599,7 @@ body {
 
 .img__fluid {
     width: 100%;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -589,5 +614,27 @@ body {
         display: flex;
         flex-direction: column;
 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .eeb_logo {
+        margin-left: 0px;
+    }
+
+    .heroSection {
+        height: 300px;
+    }
+
+    .jointeam {
+        height: 300px;
+    }
+
+    .aboutText {
+        padding-bottom: 0px;
+        margin: 0px;
+        margin-bottom: 30px;
+        line-height: 0px;
+        font-size: 30px;
     }
 }

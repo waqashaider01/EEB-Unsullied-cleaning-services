@@ -1,6 +1,15 @@
 .fa-brands, .fab {
     font-family: "Font Awesome 6 Brands" !important;
 }
+
 .fa-classic, .fa-regular, .fa-solid, .far, .fas {
     font-family: "Font Awesome 6 Free" !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Victor+Mono:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap'); */
+
+* {
+    /* font-family: 'Futura Hv BT'; */
+    /* font-family: 'Montserrat', sans-serif !important; */
 }

@@ -23,6 +23,9 @@
 
 
 
+
+
+
     <!-- owl carasouel cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- Bootstrap CSS -->
@@ -45,12 +48,12 @@
 
     <div class="container-fluid p-0 m-0">
         <!-- -------------Header------------ -->
-        <div class="container-fluid mb-5 p-0">
+        <div class="container-fluid mb-3 p-0">
             <nav class="navbar navbar-expand-lg bg-body-tertiary myNvabar">
                 <div class="container-fluid">
-                    <a href="./index.html" class="eeb_logo">
+                    <!-- <a href="./index.html" class="eeb_logo">
                         <img src="./images/logo.png" class="img-fluid" alt="">
-                    </a>
+                    </a> -->
                     <button class="navbar-toggler border border-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -104,7 +107,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="index__bg__img">
+            <div class="index__bg__img ">
                 <!-- <img src="images/11.png" alt=""> -->
             </div>
         </div>
@@ -113,16 +116,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
+                        <div class="mb-5 eeb_logo2">
+                            <a href="./index.html">
+                                <img src="./images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
                         <div class="banner__1__content mb-sm-5 mb-5">
                             <h6>THE BEST CLEANING SERVICES</h6>
                             <h1 class="mb-5 mb-md-3">EEB Unsullied
                                 Cleaning Services</h1>
-                            <a href="joinTeam.html"><button class="banner__button ">JOIN OUR TEAM</button></a>
+                            <a href="joinTeam.html">
+                                <button class="banner__button ">JOIN OUR TEAM</button>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-5">
                         <div class="banner__1__img">
-                            <img src="images/Rectangle 82.png" alt="">
+                            <img src="images/Rectangle 82.png" alt="" class="aImg ">
                         </div>
                     </div>
                 </div>
@@ -130,7 +140,7 @@
         </div>
         <div class="d-flex justify-content-center">
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="What are you looking for?">
+                <input type="text" class="search-input" id="text__color" placeholder="What are you looking for?">
                 <i class="fa-solid fa-location-dot location__icon"></i>
 
                 <input type="text" class="location-input inp-icon" placeholder="Your location">
@@ -180,39 +190,40 @@
             <div class="col-md-12">
 
                 <div class="owl-carousel lwo_c">
-                    <div class=" p-md-2 a_tag_img" >
+                    <div class=" p-md-2 a_tag_img pe-2">
                         <a href="#" class="feature_card d-flex flex-column justify-content-center align-items-center">
-                            <img src="./images/11.jpeg" class="img-fluid" alt="">
+                            <img src="./images/111 (7).jpg" class="img-fluid" alt="">
                             <div class="position-absolute">
                                 <div class="img_icon_div mx-auto">
                                     <img src="./images/img/icon2.png" class="img-fluid icon-image" alt="">
                                     <!-- Default image -->
                                 </div>
-                                <p class="pt-3 card_text complex-text">Events</p>
+                                <p class="pt-3 card_text complex-text">Interior Cleaning</p>
                             </div>
                         </a>
                     </div>
-                    <div class=" p-md-2 a_tag_img">
+                    <div class=" p-md-2 a_tag_img pe-2">
                         <a href="#" class="feature_card d-flex flex-column justify-content-center align-items-center">
-                            <img src="./images/22.jpeg" class="img-fluid" alt="">
+                            <img src="./images/1222.jpg" class="img-fluid" alt="">
                             <div class="position-absolute">
                                 <div class="img_icon_div mx-auto">
                                     <img src="./images/img/icon2.png" class="img-fluid icon-image" alt="">
                                     <!-- Default image -->
                                 </div>
-                                <p class="pt-3 card_text complex-text">Junk Removal</p>
+                                <p class="pt-3 card_text complex-text">Exterior Cleaning</p>
                             </div>
                         </a>
                     </div>
-                    <div class=" p-md-2 a_tag_img">
+                    <div class=" p-md-2 a_tag_img pe-2">
                         <a href="#" class="feature_card d-flex flex-column justify-content-center align-items-center">
-                            <img src="./images/img/card1_img.png" class="img-fluid" alt="">
+                            <img src="./images/Landscaping_Gardening/landscaping.jpg" class="img-fluid"
+                                alt="">
                             <div class="position-absolute">
                                 <div class="img_icon_div mx-auto">
                                     <img src="./images/img/icon2.png" class="img-fluid icon-image" alt="">
                                     <!-- Default image -->
                                 </div>
-                                <p class="pt-3 card_text complex-text">Complex and Duplex</p>
+                                <p class="pt-3 card_text complex-text">Landscaping/Gardening</p>
                             </div>
                         </a>
                     </div>
@@ -230,7 +241,7 @@
                 const featureCards = document.querySelectorAll('.feature_card');
 
                 featureCards.forEach(function (card) {
-                    const iconImage = card.querySelector('.icon-image');
+                    const iconImage = card.querySelector('');
 
                     // Save the default image source
                     const defaultImageSrc = iconImage.src;
@@ -284,7 +295,7 @@
             <div class="col-md-6 col-lg-3 a_tag my-2">
                 <a href="#" class="gallery_card1  d-flex flex-column justify-content-center align-items-center">
                     <div class="gallery_img">
-                        <img src="./images/Medical.png" class="img-fluid" alt="">
+                        <img src="./images/medical_fes.jpg" class="img-fluid" alt="">
                     </div>
                     <p class="pt-3 gallery_text">Medical Facilities</p>
                 </a>
@@ -293,7 +304,7 @@
             <div class="col-md-6 col-lg-3 a_tag my-2">
                 <a href="#" class="gallery_card1  d-flex flex-column justify-content-center align-items-center">
                     <div class="gallery_img">
-                        <img src="./images/Business Facilities.png" class="img-fluid" alt="">
+                        <img src="./images/business_fes.jpg" class="img-fluid" alt="">
                     </div>
                     <p class="pt-3 gallery_text">Business Facilities</p>
                 </a>
@@ -329,9 +340,9 @@
             <div class="col-md-6 col-lg-3 p-2 a_tag">
                 <a href="#" class="gallery_card1  d-flex flex-column justify-content-center align-items-center">
                     <div class="gallery_img">
-                        <img src="./images/Residential 7 1.png" class="img-fluid" alt="">
+                        <img src="./images/residential_fes.jpg" class="img-fluid" alt="">
                     </div>
-                    <p class="pt-3 gallery_text">Residential cleaning</p>
+                    <p class="pt-3 gallery_text  text-center">Residential cleaning</p>
                 </a>
             </div>
 
@@ -347,9 +358,9 @@
             <div class="col-md-6 col-lg-3 p-2 a_tag">
                 <a href="#" class="gallery_card1  d-flex flex-column justify-content-center align-items-center">
                     <div class="gallery_img">
-                        <img src="./images/Elderly Home 3 1.png" class="img-fluid" alt="">
+                        <img src="./images/elderly people/IMG-20230710-WA0024.jpg" class="img-fluid" alt="">
                     </div>
-                    <p class="pt-3 gallery_text">Elderly Home Facilities</p>
+                    <p class="pt-3 gallery_text text-center">Elderly Home Facilities</p>
                 </a>
             </div>
 
@@ -393,15 +404,17 @@
                         <!-- <p class="get_in_title">Get in touch with us</p> -->
                         <p class="get_in_title">Say Goodbye to Cleaning Chores and Hello to Free Time!</p>
                         <p class="get_in_text pt-3">
-                    We take pride in delivering exceptional customer service. Whether you have feedback, concerns, or require assistance,
-                    our dedicated customer support team is just a phone call or email away. We value your satisfaction and are committed to
-                    ensuring your experience with our cleaning services is nothing short of outstanding.</p>
+                            We take pride in delivering exceptional customer service. Whether you have feedback,
+                            concerns, or require assistance,
+                            our dedicated customer support team is just a phone call or email away. We value your
+                            satisfaction and are committed to
+                            ensuring your experience with our cleaning services is nothing short of outstanding.</p>
                     </div>
 
                     <div class="row">
                         <div class="communicat_with_us">
                             <div class="col-xl-5 col-md-6 col-12">
-                                <a href="#" class="contact_us_card me-3 mb-3">
+                                <a href="#" class="contact_us_card me-md-3 mb-3">
                                     <div class="icon_styling">
                                         <img src="./images/img/location_icon.png" class="" alt="">
                                     </div>
@@ -412,7 +425,7 @@
                                 </a>
                             </div>
                             <div class="col-xl-5 col-md-6 col-12">
-                                <a href="#" class="contact_us_card me-3 mb-3">
+                                <a href="#" class="contact_us_card me-md-3 mb-3">
                                     <div class="icon_styling">
                                         <img src="./images/img/phone_icon.png" class="" alt="">
                                     </div>
@@ -429,7 +442,7 @@
                         <div class="communicat_with_us">
 
                             <div class="col-xl-5 col-md-6 col-12">
-                                <a href="#" class="contact_us_card me-3 mb-3">
+                                <a href="#" class="contact_us_card me-md-3 mb-3">
                                     <div class="icon_styling">
                                         <img src="./images/img/msg_icon.png" class="" alt="">
                                     </div>
@@ -441,7 +454,7 @@
                             </div>
 
                             <div class="col-xl-5 col-md-6 col-12">
-                                <a href="#" class="contact_us_card me-3 mb-3">
+                                <a href="#" class="contact_us_card me-md-3 mb-3">
                                     <div class="icon_styling">
                                         <img src="./images/img/watch_icon.png" class="" alt="">
                                     </div>
@@ -458,7 +471,7 @@
                 </div>
 
                 <div class="col-lg-5 p-lg-5">
-                    <img src="./images/1 (36).jpg" class="img-fluid" alt="">
+                    <img src="./images/contact_us.jpg" class="img-fluid aImg " alt="">
                 </div>
 
             </div>
@@ -476,9 +489,9 @@
                     <div class="footer__col">
                         <h6 class="mb-3">About</h6>
                         <p class="pe-5 mb-xl-3 mb-3">
-                        
-                            Learn more about our company and what sets us apart from other cleaning service providers. Discover our mission, values,
-                            and commitment to delivering exceptional results and customer satisfaction.
+
+                            We are a professional cleaning service that provides high-quality cleaning at affordable
+                            prices.
                         </p>
                         <a class="website__logo" href="#"><img src="images/logo.png" alt=""></a>
                     </div>
